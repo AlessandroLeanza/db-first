@@ -1,0 +1,21 @@
+
+ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti 
+ delle auto usate messe in vendita da un concessionario
+ 
+ 
+Nome colonna       	 	Tipo           		attributi               indici
+
+id         				int         		AUTO_INCREMENT          primary key	 
+targa					varchar(10)			unique, not null
+numero_porte			int					unique, not null
+numero_telaio			varchar(17)			unique, not null
+brand					varchar(20)			unique, not null
+anno_produzione			int					unique, not null
+cilndrata				decimal(2,1)		unique, not null
+colore					varchar(50)			not null
+combustione				varchar(15)			not null	
+prezzo					decimal(8,2)		not null
+chilometri				int					not null
+numero_ruote			int					null
+storia_del_veicolo		text				null
+valutazione_auto		int					null
